@@ -1,10 +1,11 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 
 export const Navbarbutton = (props) => {
   const { content } = props
 
   return (
-    <button>{content}</button>
+    <Button variant="contained" color="primary">{content}</Button>
   )
 }
 

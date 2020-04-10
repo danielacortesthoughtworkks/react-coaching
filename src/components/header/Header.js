@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { Title } from './Title'
-import { Description } from './Description'
-import { Navbar } from './Navbar'
+import { Title } from '../title/Title'
+import { Description } from '../description/Description'
+import { Navbar } from '../navbar/Navbar'
 
 export const Header = (props) => {
   return (
