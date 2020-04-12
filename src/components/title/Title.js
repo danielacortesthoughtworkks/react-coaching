@@ -6,6 +6,7 @@ export const Title = (props) => {
   const { title } = props
 
   return (
+    
     <Typography variant="h1" align="center">{title}</Typography>
   )
 }
