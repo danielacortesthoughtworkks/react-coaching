@@ -1,12 +1,13 @@
 import React from 'react';
 import { Navbarbutton } from './Navbarbutton'
+import { useHistory } from 'react-router-dom'
 
 export const Navbar = (props) => {
   const divStyle = {
   position: 'absolute',
   right: '10%',
-
   };
+
 
   return (
     <div style={divStyle}>
@@ -15,9 +16,7 @@ export const Navbar = (props) => {
     <Navbarbutton content='Sponsors'></Navbarbutton>
     <Navbarbutton content='FAQ'></Navbarbutton>
     <Navbarbutton content='Subscribe'></Navbarbutton>
-
-</div>
-
+    </div>
   )
 }
 
