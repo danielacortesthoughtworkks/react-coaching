@@ -7,7 +7,7 @@ export const Faq = (props) => {
 
 
   return (
-    <Typography variant="h5" align="center">:)</Typography>
+    <Typography variant="h5" align="center">FAQ</Typography>
   )
 }
 

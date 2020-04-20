@@ -1,13 +1,11 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import 'typeface-roboto';
-
+import { Header } from '../components/header/Header'
 export const Home = (props) => {
   const { description } = props
 
 
   return (
-    <Typography variant="h5" align="center">:(</Typography>
+    <Header />
   )
 }
 

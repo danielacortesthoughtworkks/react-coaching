@@ -13,9 +13,3 @@ test('renders description', () => {
   const linkElement = getByText(/Community driven roadmaps/i);
   expect(linkElement).toBeInTheDocument();
 });
-
-test('renders navbar buttons', () => {
-  const { getByText } = render(<Header />);
-  const linkElement = getByText(/FAQ/i);
-  expect(linkElement).toBeInTheDocument();
-});

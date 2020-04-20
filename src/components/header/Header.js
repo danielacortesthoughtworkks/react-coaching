@@ -8,13 +8,6 @@ import Grid from '@material-ui/core/Grid';
 export const Header = (props) => {
   return (
     <div>
-
-      <Grid container spacing={1}>
-        <Grid item xs={12}>
-          <div style={{height: "180px"}}><Navbar /></div>
-        </Grid>
-      </Grid>
-
       <Grid container spacing={1}>
         <Grid item xs>
         </Grid>
