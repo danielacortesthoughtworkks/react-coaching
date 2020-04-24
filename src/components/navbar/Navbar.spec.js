@@ -1,10 +1,10 @@
 import React from 'react'
 import { render } from '@testing-library/react';
-import Description from './Description'
+import Navbar from './Navbar'
 
-describe('<Description /> spec', () => {
+describe('<Navbar /> spec', () => {
 it('renders the component', () => {
-  const container = render(<Description />)
+  const container = render(<Navbar />)
   expect(container.firstChild).toMatchSnapshot()
  })
-});
+})

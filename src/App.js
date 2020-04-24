@@ -18,7 +18,7 @@ import { Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
+    <div data-testid= "home-test"className="App">
       <Navbar />
       <Router history={history}>
                     <Switch>

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Navbarbutton } from './Navbarbutton'
 import Grid from '@material-ui/core/Grid'
-import { navigateToFaq } from '../../navigator/navigator'
-import { navigateToHome } from '../../navigator/navigator'
-import { navigateToGuides } from '../../navigator/navigator'
-import { navigateToSponsors } from '../../navigator/navigator'
-import { navigateToRoadmaps } from '../../navigator/navigator'
+import { navigateToFaq } from '../../navigator/Navigator'
+import { navigateToHome } from '../../navigator/Navigator'
+import { navigateToGuides } from '../../navigator/Navigator'
+import { navigateToSponsors } from '../../navigator/Navigator'
+import { navigateToRoadmaps } from '../../navigator/Navigator'
+import Button from '@material-ui/core/Button';
 
 export const Navbar = (props) => {
 
@@ -15,11 +15,11 @@ export const Navbar = (props) => {
           <Grid item xs = { 8 }>
           </Grid>
           <Grid item xs >
-            <Navbarbutton content = 'FAQ' onClick = { navigateToFaq } > < /Navbarbutton>
-            <Navbarbutton content = 'Roadmaps' onClick = { navigateToRoadmaps } > < /Navbarbutton>
-            <Navbarbutton content = 'Guides' onClick = { navigateToGuides } > < /Navbarbutton>
-            <Navbarbutton content = 'Sponsors' onClick = { navigateToSponsors } > < /Navbarbutton>
-            <Navbarbutton content = 'Home' onClick = { navigateToHome } > < /Navbarbutton>
+            <Button variant="contained" color="primary" onClick = { navigateToFaq } > FAQ</Button>
+            <Button variant="contained" color="primary" onClick = { navigateToRoadmaps } >Roadmaps </Button>
+            <Button variant="contained" color="primary" onClick = { navigateToGuides } > Guides</Button>
+            <Button variant="contained" color="primary" onClick = { navigateToSponsors } > Sponsors</Button>
+            <Button variant="contained" color="primary" onClick = { navigateToHome } > Home</Button>
           </Grid >
         </Grid>
       </div >

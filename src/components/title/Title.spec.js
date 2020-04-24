@@ -1,10 +1,11 @@
+
 import React from 'react'
 import { render } from '@testing-library/react';
-import Description from './Description'
+import Title from './Title'
 
-describe('<Description /> spec', () => {
+describe('<Title /> spec', () => {
 it('renders the component', () => {
-  const container = render(<Description />)
+  const container = render(<Title />)
   expect(container.firstChild).toMatchSnapshot()
  })
 });
