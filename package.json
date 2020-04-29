@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:unit": "LOG_LEVEL=silent jest --env node --coverage"
+    "test:unit": "npm test -- --watchAll=false --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,15 +38,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "babel-jest": "^25.5.1",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "jest": "^25.5.2"
+    "enzyme-adapter-react-16": "^1.15.2"
   },
   "jest": {
-    "collectCoverage": true,
     "coverageThreshold": {
       "global": {
         "branches": 80,
