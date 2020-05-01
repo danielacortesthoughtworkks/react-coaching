@@ -51,8 +51,11 @@
       }
     },
     "collectCoverageFrom": [
-      "!src/components/description/__snapshots__/**",
-      "!**/serviceWorker.js"
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/serviceWorker.js",
+      "!**/index.js"
     ] 
   }
 }
