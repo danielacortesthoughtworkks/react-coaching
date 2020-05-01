@@ -7,7 +7,7 @@ export const Guides = (props) => {
 
 
   return (
-    <Typography variant="h5" align="center">Guides</Typography>
+    <div data-testid="guides-test"><Typography variant="h5" align="center">This is the Guides page</Typography></div>
   )
 }
 

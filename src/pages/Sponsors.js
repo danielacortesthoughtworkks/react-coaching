@@ -7,7 +7,7 @@ export const Sponsors = (props) => {
 
 
   return (
-    <Typography variant="h5" align="center">Sponsors</Typography>
+    <div data-testid="sponsors-test"><Typography variant="h5" align="center">This is the Sponsors page</Typography></div>
   )
 }
 

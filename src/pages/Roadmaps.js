@@ -7,7 +7,8 @@ export const Roadmaps = (props) => {
 
 
   return (
-    <Typography variant="h5" align="center">Roadmaps</Typography>
+    <div data-testid="roadmaps-test"><Typography variant="h5" align="center">This is the Roadmaps page</Typography></div>
+    
   )
 }
 

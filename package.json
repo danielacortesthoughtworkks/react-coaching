@@ -49,6 +49,10 @@
         "lines": 80,
         "statements": 10
       }
-    }
+    },
+    "collectCoverageFrom": [
+      "!src/components/description/__snapshots__/**",
+      "!**/serviceWorker.js"
+    ] 
   }
 }

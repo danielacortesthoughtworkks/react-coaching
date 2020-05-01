@@ -1,32 +1,39 @@
-import React from 'react'
-import { Router } from 'react-router-dom'
-import { createMemoryHistory } from 'history'
-import { render, fireEvent } from '@testing-library/react'
-import '@testing-library/jest-dom/extend-expect'
-import App  from '../app'
-import FAQ  from '../pages/Faq'
+import {navigateToFaq, navigateToHome, navigateToGuides, navigateToRoadmaps, navigateToSponsors} from "./Navigator"
+import { history } from '../App'
 
-test('home page is rendering correctly', () => {
-  const history = createMemoryHistory()
-  const route = '/'
-  history.push(route)
-  const { getByTestId } = render(
-    <Router history={history}>
-      <App />
-    </Router>
-  )
-  expect(getByTestId('home-test')).toHaveTextContent('Developer Roadmaps', { exact: false })
+jest.mock('../App')
+history.push = jest.fn()
+
+afterEach(() => {
+    history.push.mockClear()
 })
 
-test('faq is rendering correctly', () => {
-  const history = createMemoryHistory()
-  const route = '/faq'
-  history.push(route)
-  const { getByTestId } = render(
-    <Router history={history}>
-      <FAQ />
-    </Router>
-  )
-  expect(getByTestId('faq-test')).toHaveTextContent('This is the FAQ page', { exact: false })
-  
+test('should call history.push faq', () => {
+    navigateToFaq()
+
+    expect(history.push).toHaveBeenCalledWith('/faq')
+}) 
+
+test('should call /', () => {
+    navigateToHome()
+
+    expect(history.push).toHaveBeenCalledWith('/')
+})
+
+test('should call history.push guides', () => {
+    navigateToGuides()
+
+    expect(history.push).toHaveBeenCalledWith('/guides')
+})
+
+test('should call history.push roadmaps', () => {
+    navigateToRoadmaps()
+
+    expect(history.push).toHaveBeenCalledWith('/roadmaps')
+})
+
+test('should call history.push sponsors', () => {
+    navigateToSponsors()
+
+    expect(history.push).toHaveBeenCalledWith('/sponsors')
 })
